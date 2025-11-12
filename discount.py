@@ -5,7 +5,7 @@ SALES_TAX_RATE = .06   #6% Sales Tax
 
 discount = 0
 today = date.today() #Get today's date from computer's operating system
-day_of_the_week = today.weekday() #Return an int representing day of week (0 = Monday, 1 = Tuesday, ..., 7 = Sunday)
+day_of_the_week = 1 #today.weekday() #Return an int representing day of week (0 = Monday, 1 = Tuesday, ..., 7 = Sunday)
 
 
 subtotal = float(input("Enter the subtotal: $"))
@@ -21,7 +21,6 @@ subtotal -= discount
 tax = subtotal * SALES_TAX_RATE
 
 total = subtotal + tax
-print(f"Discount Received: ${discount}")
 print(f"Sales Tax: ${tax}")
 print(f"Total Amount Due: ${total}")
 
